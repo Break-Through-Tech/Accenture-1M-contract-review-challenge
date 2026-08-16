@@ -41,7 +41,7 @@ The CUAD-based contract triage pipeline is a high-value industrial use case with
 # Contract Review Challenge
 
 **Company / Org:** Accenture  
-**Challenge Advisor:** Hetal Jetani, [Email address]  
+**Challenge Advisor:** Hetal Jetani, [hetal.jetani@accenture.com]  
 **AI Studio Coach:** Parth Dali, parth.dali@breakthroughtech.org  
 **Program:** Break Through Tech AI Studio - Fall 2026  
 
@@ -70,9 +70,10 @@ Stretch goals include span extraction, a trained risk model benchmarked against 
 Use these milestones to guide your work. Your team will create a GitHub Projects board to track tasks within each milestone.
 | Month | Milestone | Key Activities |
 |-------|-----------|----------------|
-| **September** | [Title] | Clean and split the CUAD data, run EDA on class imbalance, build a chunking strategy, and establish a TF-IDF/keyword baseline with per-category metrics. |
-| **October** | [Title] | Fine-tune a transformer encoder for multi-label clause classification, address class imbalance, evaluate with per-category precision/recall/F1, and conduct error analysis. |
-| **November** | [Title] | Build and calibrate the four-signal risk-scoring layer, assemble the end-to-end pipeline, and validate risk rankings against advisor-labeled examples. |
+| **September** | [Data Understanding & Pipeline Foundation] | Understand the CUAD dataset and 41 clause categories; review contract structure and annotations; establish data preprocessing and chunking strategy; perform exploratory data analysis; define train/validation/test splits; establish baseline clause-classification approach and evaluation metrics |
+| **October** | [Clause Classification & Model Development] | Implement chunk-based multi-label classification; fine-tune transformer-based models; experiment with chunking strategies and class imbalance; evaluate precision, recall, F1 and per-clause performance; perform initial error analysis; identify challenging clause categories |
+| **November** | [Risk Scoring & End-to-End Integration] | Develop explainable rule-based Low/Medium/High risk scoring; map detected clauses to risk indicators; build contract-level triage scoring; integrate clause detection and risk scoring into an end-to-end pipeline; generate evidence/explanations showing why clauses were flagged; evaluate pipeline performance |
+| **December** | [Validation, Polish & Final Presentation] | Conduct final model and pipeline evaluation; refine risk thresholds and scoring logic; document limitations and potential false positives/negatives; create sample contract-level risk reports/dashboard; finalize code and documentation; prepare final demo, presentation, and portfolio-ready GitHub repository |
 
 > **Note for the team:** Please create a GitHub Projects board in this repository to break these milestones into weekly tasks. Go to the **Projects** tab → **New project** → Choose **Board** → Add columns for each month.
 
