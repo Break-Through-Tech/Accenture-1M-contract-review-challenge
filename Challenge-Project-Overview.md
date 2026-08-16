@@ -70,11 +70,11 @@ Stretch goals include span extraction, a trained risk model benchmarked against 
 Use these milestones to guide your work. Your team will create a GitHub Projects board to track tasks within each milestone.
 | Month | Milestone | Key Activities |
 |-------|-----------|----------------|
-| **September** | [Title] | Clean and split the CUAD data, run EDA on class imbalance, build a chunking strategy, and establish a TF-IDF/keyword baseline with per-category metrics. |
-| **October** | [Title] | Fine-tune a transformer encoder for multi-label clause classification, address class imbalance, evaluate with per-category precision/recall/F1, and conduct error analysis. |
-| **November** | [Title] | Build and calibrate the four-signal risk-scoring layer, assemble the end-to-end pipeline, and validate risk rankings against advisor-labeled examples. |
+| **September** | Data understanding and baselines | Dataset selection, reconstructed thread schema, exploratory analysis, baseline models, first evaluation harness. |
+| **October** | Modeling, Development & Compression | End-to-end pipeline, evidence retrieval, report schema, grounded LLM synthesis, package structure |
+| **November** | Evaluation & Presentation | Final demo, final results tables, documented limitations, results, portfolio-ready repository and walkthrough |
 
-> **Note for the team:** Please create a GitHub Projects board in this repository to break these milestones into weekly tasks. Go to the **Projects** tab → **New project** → Choose **Board** → Add columns for each month.
+> **Note for the team:** Create a GitHub Projects board in this repository and track work by issue. Recommended columns: Backlog, This Week, In Progress, In Review, Done. Go to the Projects tab → New project → Choose Board → Add columns for each month.
 
 ---
 
