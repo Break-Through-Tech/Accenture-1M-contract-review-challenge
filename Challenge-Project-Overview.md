@@ -1,43 +1,3 @@
----
-
-> ## Challenge Advisor: Update & Finalize Your Project Overview
->
-> > 💡 **These grey text instructions are just for you, the team's Challenge Advisor; please delete them once you have completed the steps below.**
->
-> We've pre-populated this Challenge Project Overview page — which is what will be shared with your Break Through Tech student team in August — using the details from your submission form. You should have received an email inviting you to join this repo as a Collaborator, enabling you to add files and make edits.
-> 
-> In order for your project to be finalized and assigned to a team, please:
-> 1. **Review all sections below** and update or expand any content as needed, making sure to address the SME Feedback in the section immediately below. Look for square brackets to find the places below that require additional inputs from you (e.g., "About [Company / Org Name]").
-> 2. **Add your dataset** to the [data folder](data) in this repo.
-> 3. **Close the Issue assigned to you in this repo** to let us know that you have made your edits and the overview page is ready for final review. You can do this by going to the _Issues_ tab in the top left section of the menu above, add a comment that says "CA review complete", and click the button to Close the Issue. 
->
-> If you're unfamiliar with how to edit a page like this in GitHub, check out [this tutorial](https://ubc-lib-geo.github.io/gis-workshop-waml-template/content/handson/edit-readme.html) for a quick overview (start with step 2 and only edit this page), and [this guide](https://ubc-lib-geo.github.io/gis-workshop-waml-template/content/markdown.html) on how to use Markdown to compose text.
->
->
-> ❌ Remember that this is a public repo. Do NOT include: Proprietary data, PII, API keys, credentials, or anything confidential.
-
----
-
-## 📋 BTT Internal Evaluation Notes
-*(This section is for BTT staff and CAs only — remove before sharing with students)*
-
-### Technical Vetting
-| Check | Status | Notes |
-| :--- | :--- | :--- |
-| Python Compatibility | 🟢 | Project utilizes standard libraries (HuggingFace transformers, scikit-learn, pandas) compatible with free-tier Google Colab environments. |
-| Data Readiness | 🟡 | CUAD dataset is well-structured but requires significant effort to parse raw PDF text and align token-level labels for 41 categories, which may consume excessive time during early weeks. |
-| Resource Check | 🟢 | Project fits within memory constraints; however, fine-tuning large transformer models will require careful batch size management in Colab. |
-
-### Internal Scores
-- **Student Fit Score:** 7/10
-- **Technical Depth Score:** 8/10
-- **Overall Recommendation:** REVISE
-
-### Advisor Feedback Draft
-The CUAD-based contract triage pipeline is a high-value industrial use case with excellent potential for technical rigor. To ensure success within the timeframe of the program, I suggest: (i) pivoting from fine-tuning from scratch to utilizing pre-trained lightweight models (e.g., DistilRoBERTa) to reduce hardware overhead demand; and (ii) constraining the scope by focusing on the 10 most impactful clause categories, and having the full 41 as a stretch goal.
-
----
-
 # Contract Review Challenge
 
 **Company / Org:** Accenture  
@@ -119,7 +79,7 @@ Use these milestones to guide the project. The team should create a GitHub Proje
 
 ### Key Details
 - Real-world commercial contracts from the CUAD dataset (510 contracts, 41 expert-annotated clause categories), raw text/PDF available.
-- Teams must implement strict preprocessing rules to handle document length variance and ensure text cleaning captures the necessary legal terminology for high-accuracy classification.
+- Team must implement strict preprocessing rules to handle document length variance and ensure text cleaning captures the necessary legal terminology for high-accuracy classification.
 
 ---
 
@@ -138,7 +98,7 @@ Use these milestones to guide the project. The team should create a GitHub Proje
 ---
 ## 📚 Resources to Get Started
 
-These resources will help the team understand the CUAD dataset, legal clause classification, transformer models, and the overall project approach.
+These resources will help your team understand the CUAD dataset, legal clause classification, transformer models, and the overall project approach.
 
 **Background Reading:**
 - [CUAD – Contract Understanding Atticus Dataset](https://www.atticusprojectai.org/cuad/) — Dataset overview and legal contract review problem.
@@ -190,11 +150,11 @@ CUAD Contracts → Preprocessing → Chunking → Multi-label Clause Classificat
 
 ### Primary Evaluation
 
-Students should focus primarily on **Precision, Recall, and F1 Score** when evaluating clause classification.
+Team should focus primarily on **Precision, Recall, and F1 Score** when evaluating clause classification.
 
 For the final risk-triage pipeline, **High-Risk Recall** is especially important because the goal is to avoid missing contracts that may require additional legal or procurement review.
 
-Students should also perform a simple **error analysis** by reviewing examples of:
+Team should also perform a simple **error analysis** by reviewing examples of:
 - Incorrectly identified clauses
 - Missed clauses
 - Incorrect risk assignments
@@ -217,20 +177,12 @@ The goal is not only to report a score, but to understand **where the model work
 - **Coding:** Google Colab, VS Code, Jupyter Notebooks
 - **ML / NLP:** Hugging Face Transformers, Hugging Face Datasets, PyTorch
 - **Data Analysis:** pandas, NumPy, scikit-learn
-- **Collaboration:** GitHub Issues, GitHub Projects, Notion
-- **Version Control:** Git and GitHub
+- **Collaboration:** Git, GitHub Projects, Notion
 - **Environment Management:** `uv` or Python virtual environments
 - **Documentation:** GitHub README and project documentation
 - **Virtual Meetings:** Zoom, Google Meet
 - **Team Communication:** WhatsApp for quick coordination; use GitHub Issues for project decisions and technical discussions
 
-> 💡 **Challenge Advisor: Please update the above based on your availability and preference. If you are not able to answer questions or meet with fellows outside of the biweekly Lab Section check-ins, simply write in "N/A (only available during the official check-in times)"**
-
-**Recommended free coding / collaboration tools**
-
-If you mean **GitHub-ready Markdown** that you can copy/paste into your README, use this:
-
-```markdown
 ## What I Expect From the Team
 
 - **Keep work visible:** Track tasks, questions, and progress using GitHub Issues and the GitHub Projects board.
@@ -239,24 +191,18 @@ If you mean **GitHub-ready Markdown** that you can copy/paste into your README, 
 - **Maintain reproducibility:** Keep the repository organized with clear setup instructions, dependencies, data documentation, and reproducible workflows so that an external reviewer can run the demo.
 - **Use meaningful commits:** Write clear commit messages that describe what was changed and why.
 - **Keep documentation current:** Update the README and relevant documentation as the project architecture, models, and results evolve.
-```
 
-For your **CUAD contract-risk project**, I would replace the conversation-specific language with tasks that directly match what the students need to do.
-
-Copy/paste this into GitHub:
-
-```markdown
 ## 🚀 Getting Started
 
 Read this overview and list your open questions before our first team meeting.
 
-1. **Review `README.md`:** Understand the project goals, technical approach, dataset expectations, milestones, and repository guidelines.
+1. **Review this overview document** and note any questions for our first meeting: Understand the project goals, technical approach, dataset expectations, milestones.
 
 2. **Review the CUAD Dataset:** Explore the 41 clause categories and identify the initial subset of contracts you will use for data exploration and baseline development.
 
 3. **Define the Data Structure:** Agree on the standard format for contracts, clause labels, text chunks, evidence spans, model predictions, and risk scores.
 
-4. **Create the GitHub Projects Board:** Set up the project board and create initial issues for:
+4. **Read the GitHub Projects documentation** [here](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
    - CUAD data access and setup
    - Data exploration and preprocessing
    - Chunking strategy
@@ -268,12 +214,6 @@ Read this overview and list your open questions before our first team meeting.
 5. **Prepare Open Questions:** Record questions, assumptions, and areas where you need clarification before the first team meeting.
 
 6. **Document Your Decisions:** Keep important technical decisions and findings in GitHub Issues or project documentation so the entire team can follow the project's progress.
-```
-
-
-1. **Review this overview document** and note any questions for our first meeting
-2. **Begin reviewing the dataset** using the link above
-3. **Read the GitHub Projects documentation** [here](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
 
 I’m excited to work with you!
 
