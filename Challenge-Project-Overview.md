@@ -202,7 +202,8 @@ Read this overview and list your open questions before our first team meeting.
 
 3. **Define the Data Structure:** Agree on the standard format for contracts, clause labels, text chunks, evidence spans, model predictions, and risk scores.
 
-4. **Read the GitHub Projects documentation** [here](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
+4. **Read the GitHub Projects documentation** [here](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)   
+Set up the project board and create initial issues for Eg:
    - CUAD data access and setup
    - Data exploration and preprocessing
    - Chunking strategy
