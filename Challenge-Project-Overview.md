@@ -47,13 +47,19 @@ Use these milestones to guide the project. The team should create a GitHub Proje
 **Size:** under 1gb  
 **Location:** [Data folder](data/cuad)
 
+### Key Details
+- `CUADv1.json` contains 510 commercial contracts and 13,823 annotated answer spans across 41 contract-review categories.
+- Use the prepared JSON files: `train_separate_questions.json` contains 408 contracts and `test.json` contains 102 contracts. These are the **official** train/test splits released by The Atticus Project — split at the contract level (not by individual clause) to prevent data leakage, and directly comparable to the results in the original CUAD paper. Do not re-split the data yourselves.
+- Contract text is already available in each JSON document's `paragraphs[].context` field, with clause questions in `paragraphs[].qas[]` and labeled spans in `paragraphs[].qas[].answers[]`. **Do not parse raw PDFs for this project.**
+- `category_descriptions.csv` provides the name, description, answer format, and group for each of the 41 categories.
+- Contracts vary substantially in length, so teams should develop a chunking strategy, preserve important legal terminology during cleaning, and account for class imbalance.
+
 | Dataset / Source | Purpose in Project | Format | Access |
 |---|---|---|---|
-| **CUAD Master Clauses Dataset** | Primary training dataset for identifying the 41 legal clause categories. Contains contract text and expert-annotated answers for each category. Recommended starting point for students. | CSV | [CUAD on Hugging Face](https://huggingface.co/datasets/theatticusproject/cuad) |
-| **CUAD SQuAD-style Dataset** | Used for clause extraction and identifying where relevant clauses appear within a contract. | JSON | [CUAD JSON Data](https://huggingface.co/datasets/theatticusproject/cuad/tree/main/CUAD_v1) |
-| **CUAD Full Contracts – Text** | Provides complete contract text for preprocessing, chunking, testing, and running the final pipeline against full contracts. | 510 TXT files | [Full Contract Text Files](https://huggingface.co/datasets/theatticusproject/cuad/tree/main/CUAD_v1/full_contract_txt) |
 | **CUAD Category Descriptions** | Defines the 41 clause categories and provides guidance on what each category represents. Useful for building the label mapping and understanding the classification task. | CSV | [CUAD GitHub Repository](https://github.com/TheAtticusProject/cuad) |
-| **CUAD Dataset – Hugging Face** | Provides a machine-learning-friendly way to load CUAD directly into Python and Hugging Face workflows. Useful for students working with Transformers and PyTorch. | Hugging Face Dataset | [CUAD on Hugging Face](https://huggingface.co/datasets/theatticusproject/cuad) |
+| **CUAD Dataset – Hugging Face** | Provides a machine-learning-friendly way to load CUAD directly into Python and Hugging Face workflows.| Hugging Face Dataset | [CUAD on Hugging Face](https://huggingface.co/datasets/theatticusproject/cuad-qa) |
+
+> ⚠️ **Note on Hugging Face naming:** use `theatticusproject/cuad-qa` specifically. The similarly named `theatticusproject/cuad` (no `-qa`) is a different, unstructured repository containing only documentation text — it is **not** usable contract data.
 
 ### Working Dataset Expectations
 
@@ -75,11 +81,6 @@ Use these milestones to guide the project. The team should create a GitHub Proje
 * Standardize contract IDs, clause labels, annotation spans, and document metadata across all source files.
 * Handle long contracts carefully: chunk text without separating important clause context or splitting relevant annotations incorrectly.
 * Expect domain and annotation variability: CUAD contracts and expert annotations may differ in structure and language, which can affect model performance on new or unseen contracts.
-
-
-### Key Details
-- Real-world commercial contracts from the CUAD dataset (510 contracts, 41 expert-annotated clause categories), raw text/PDF available.
-- Team must implement strict preprocessing rules to handle document length variance and ensure text cleaning captures the necessary legal terminology for high-accuracy classification.
 
 ---
 
@@ -112,14 +113,16 @@ These resources will help your team understand the CUAD dataset, legal clause cl
 
 **Code & Data:**
 - [Official CUAD GitHub Repository](https://github.com/TheAtticusProject/cuad) — Reference code and dataset resources.
-- [CUAD on Hugging Face](https://huggingface.co/datasets/theatticusproject/cuad) — Machine-learning-friendly access to CUAD.
 - [Guide to the provided data files](data/cuad/README.md)
 
 **Recommended Tools:**
 - **Python:** pandas, NumPy, scikit-learn
 - **ML/NLP:** Hugging Face Transformers, Hugging Face Datasets, PyTorch
 - **Development:** Google Colab, VS Code, Jupyter Notebooks
-- **Version Control:** Git and GitHub
+- **Data Analysis:** pandas, NumPy, scikit-learn
+- **Collaboration:** Git, GitHub Projects, Notion
+- **Documentation:** GitHub README and project documentation
+- **Virtual Meetings:** Zoom, Google Meet
 
 > **Tip:** Start with the CUAD dataset and Labeling Handbook before selecting a model. You are encouraged to explore additional tools, techniques, and resources as you develop the project and share useful findings with the team.
 
@@ -172,17 +175,6 @@ The goal is not only to report a score, but to understand **where the model work
 * [Mobile connect, WhatsApp]
 * [Note: I will aim to respond within 48 hours. Please reach out to your AI Studio Coach with urgent questions.]
 
-## Recommended Tools
-
-- **Coding:** Google Colab, VS Code, Jupyter Notebooks
-- **ML / NLP:** Hugging Face Transformers, Hugging Face Datasets, PyTorch
-- **Data Analysis:** pandas, NumPy, scikit-learn
-- **Collaboration:** Git, GitHub Projects, Notion
-- **Environment Management:** `uv` or Python virtual environments
-- **Documentation:** GitHub README and project documentation
-- **Virtual Meetings:** Zoom, Google Meet
-- **Team Communication:** WhatsApp for quick coordination; use GitHub Issues for project decisions and technical discussions
-
 ## What I Expect From the Team
 
 - **Keep work visible:** Track tasks, questions, and progress using GitHub Issues and the GitHub Projects board.
@@ -197,24 +189,10 @@ The goal is not only to report a score, but to understand **where the model work
 Read this overview and list your open questions before our first team meeting.
 
 1. **Review this overview document** and note any questions for our first meeting: Understand the project goals, technical approach, dataset expectations, milestones.
-
-2. **Review the CUAD Dataset:** Explore the 41 clause categories and identify the initial subset of contracts you will use for data exploration and baseline development.
-
-3. **Define the Data Structure:** Agree on the standard format for contracts, clause labels, text chunks, evidence spans, model predictions, and risk scores.
-
-4. **Read the GitHub Projects documentation** [here](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)   
-Set up the project board and create initial issues for Eg:
-   - CUAD data access and setup
-   - Data exploration and preprocessing
-   - Chunking strategy
-   - Baseline model
-   - Evaluation metrics
-   - Transformer model
-   - Risk-scoring rules
-
-5. **Prepare Open Questions:** Record questions, assumptions, and areas where you need clarification before the first team meeting.
-
-6. **Document Your Decisions:** Keep important technical decisions and findings in GitHub Issues or project documentation so the entire team can follow the project's progress.
+2. **Begin reviewing the JSON dataset** in the [data folder](data/cuad) Explore the 41 clause categories and identify the initial subset of contracts you will use for data exploration and baseline development.
+3. **Read the GitHub Projects documentation** [here](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
+4. **Prepare Open Questions:** Record questions, assumptions, and areas where you need clarification before the first team meeting.
+5. **Document Your Decisions:** Keep important technical decisions and findings in GitHub Issues or project documentation so the entire team can follow the project's progress.
 
 I’m excited to work with you!
 
