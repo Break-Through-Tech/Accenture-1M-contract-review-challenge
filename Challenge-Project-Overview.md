@@ -45,7 +45,7 @@ Use these milestones to guide the project. The team should create a GitHub Proje
 **Name and Source:** CUAD Dataset (Contract Understanding Atticus Dataset)  
 **Format:** JSON, Raw Text/PDF  
 **Size:** under 1gb  
-**Location:** https://github.com/TheAtticusProject/cuad 
+**Location:** [Data folder](data/cuad)
 
 | Dataset / Source | Purpose in Project | Format | Access |
 |---|---|---|---|
