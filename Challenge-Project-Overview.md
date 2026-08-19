@@ -108,12 +108,12 @@ These resources will help your team understand the CUAD dataset, legal clause cl
 **Technical Tutorials:**
 - [Hugging Face – Text Classification](https://huggingface.co/docs/transformers/main/en/tasks/sequence_classification) — Fine-tuning transformer models.
 - [Hugging Face – Datasets](https://huggingface.co/docs/datasets/) — Loading and processing datasets.
+- [Hugging Face padding and truncation guide](https://huggingface.co/docs/transformers/main/pad_truncation)
 
 **Code & Data:**
 - [Official CUAD GitHub Repository](https://github.com/TheAtticusProject/cuad) — Reference code and dataset resources.
 - [CUAD on Hugging Face](https://huggingface.co/datasets/theatticusproject/cuad) — Machine-learning-friendly access to CUAD.
-
-**ML Problem Type:** NLP / Multi-label Classification / Information Extraction / Explainable Risk Scoring
+- [Guide to the provided data files](data/cuad/README.md)
 
 **Recommended Tools:**
 - **Python:** pandas, NumPy, scikit-learn
