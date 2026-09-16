@@ -31,13 +31,32 @@
 
 ## 👩🏽‍💻 **Setup and Installation**
 
-**Provide step-by-step instructions so someone else can run your code and reproduce your results. Depending on your setup, include:**
+```powershell
+git clone <this repository>
+cd Accenture-1M-contract-review-challenge
+pip install -r requirements.txt
+```
 
-* How to clone the repository
-* How to install dependencies
-* How to set up the environment
-* How to access the dataset(s)
-* How to run the notebook or scripts
+The raw CUAD files are already in [`data/cuad/`](data/cuad/). To build the
+cleaned dataset:
+
+```powershell
+python scripts/prepare_cuad.py    # writes data/processed/
+python -m pytest                  # checks that every annotation span survived
+```
+
+Then load it from Python:
+
+```python
+from scripts.load_dataset import load_clauses
+
+clauses = load_clauses(split="train")   # contract_id, text, category, annotations, ...
+```
+
+[`DATA_CONTRACT.md`](DATA_CONTRACT.md) describes each output file, the
+cleaning rules, and how the annotation offsets are kept valid.
+[`.github/workflows/tests.yml`](.github/workflows/tests.yml) runs the unit
+tests on GitHub for every push and pull request.
 
 ---
 

@@ -1,0 +1,5 @@
+# The prepared data must check out byte-identical on every OS, or the
+# reproducibility promise in DATA_CONTRACT.md fails on Windows, where
+# core.autocrlf=true would otherwise rewrite the record separators.
+*.jsonl text eol=lf
+*.json  text eol=lf

@@ -1,0 +1,87 @@
+{
+  "source_files": [
+    "train_separate_questions.json",
+    "test.json",
+    "category_descriptions.csv"
+  ],
+  "cleaning_rule": "Contract text is normalized and every annotation offset is remapped onto the cleaned text, so text[start:end] still returns the clause.",
+  "cleaning": {
+    "characters_before": 26807133,
+    "characters_after": 25802025,
+    "characters_removed": 1005108,
+    "percent_removed": 3.75,
+    "changes_by_rule": {
+      "collapsed_blank_lines": 47393,
+      "collapsed_spaces": 935040,
+      "dot_leaders": 14728,
+      "page_marker": 7748,
+      "soft_hyphen": 121,
+      "space_variants": 693,
+      "trailing_whitespace": 15,
+      "zero_width_space": 63
+    }
+  },
+  "stats": {
+    "train_contracts": 408,
+    "train_contract_category_rows": 16728,
+    "train_answer_spans": 11180,
+    "test_contracts": 102,
+    "test_contract_category_rows": 4182,
+    "test_answer_spans": 2643,
+    "total_contracts": 510,
+    "total_answer_spans": 13823
+  },
+  "categories": 41,
+  "answer_spans_by_category": {
+    "Affiliate License-Licensee": 115,
+    "Affiliate License-Licensor": 69,
+    "Agreement Date": 476,
+    "Anti-Assignment": 654,
+    "Audit Rights": 643,
+    "Cap on Liability": 672,
+    "Change of Control": 253,
+    "Competitive Restriction Exception": 125,
+    "Covenant Not to Sue": 173,
+    "Document Name": 521,
+    "Effective Date": 447,
+    "Exclusivity": 410,
+    "Expiration Date": 467,
+    "Governing Law": 464,
+    "IP Ownership Assignment": 318,
+    "Insurance": 560,
+    "Irrevocable or Perpetual License": 165,
+    "Joint IP Ownership": 115,
+    "License Grant": 777,
+    "Liquidated Damages": 121,
+    "Minimum Commitment": 424,
+    "Most Favored Nation": 38,
+    "No-Solicit of Customers": 58,
+    "No-Solicit of Employees": 91,
+    "Non-Compete": 259,
+    "Non-Disparagement": 65,
+    "Non-Transferable License": 298,
+    "Notice Period to Terminate Renewal": 122,
+    "Parties": 2554,
+    "Post-Termination Services": 450,
+    "Price Restrictions": 27,
+    "Renewal Term": 210,
+    "Revenue/Profit Sharing": 418,
+    "Rofr/Rofo/Rofn": 367,
+    "Source Code Escrow": 66,
+    "Termination for Convenience": 246,
+    "Third Party Beneficiary": 39,
+    "Uncapped Liability": 167,
+    "Unlimited/All-You-Can-Eat-License": 32,
+    "Volume Restriction": 171,
+    "Warranty Duration": 176
+  },
+  "invalid_span_count": 0,
+  "invalid_spans": [],
+  "duplicate_contract_count": 1,
+  "duplicate_contracts": [
+    {
+      "contract_id": "ADUROBIOTECH,INC_06_02_2020-EX-10.7-CONSULTING AGREEMENT",
+      "duplicate_of": "ADUROBIOTECH,INC_06_02_2020-EX-10.7-CONSULTING AGREEMENT(1)"
+    }
+  ]
+}
