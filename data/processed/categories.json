@@ -1,0 +1,248 @@
+[
+  {
+    "name": "Document Name",
+    "description": "The name of the contract",
+    "answer_format": "Contract Name",
+    "group": null
+  },
+  {
+    "name": "Parties",
+    "description": "The two or more parties who signed the contract",
+    "answer_format": "Entity or individual names",
+    "group": null
+  },
+  {
+    "name": "Agreement Date",
+    "description": "The date of the contract",
+    "answer_format": "Date (mm/dd/yyyy)",
+    "group": "1"
+  },
+  {
+    "name": "Effective Date",
+    "description": "The date when the contract is effective",
+    "answer_format": "Date (mm/dd/yyyy)",
+    "group": "1"
+  },
+  {
+    "name": "Expiration Date",
+    "description": "On what date will the contract's initial term expire?",
+    "answer_format": "Date (mm/dd/yyyy) / Perpetual",
+    "group": "1"
+  },
+  {
+    "name": "Renewal Term",
+    "description": "What is the renewal term after the initial term expires? This includes automatic extensions and unilateral extensions with prior notice.",
+    "answer_format": "[Successive] number of years/months / Perpetual",
+    "group": "1"
+  },
+  {
+    "name": "Notice Period to Terminate Renewal",
+    "description": "What is the notice period required to terminate renewal?",
+    "answer_format": "Number of days/months/year(s)",
+    "group": "1"
+  },
+  {
+    "name": "Governing Law",
+    "description": "Which state/country's law governs the interpretation of the contract?",
+    "answer_format": "Name of a US State / non-US Province, Country",
+    "group": null
+  },
+  {
+    "name": "Most Favored Nation",
+    "description": "Is there a clause that if a third party gets better terms on the licensing or sale of technology/goods/services described in the contract, the buyer of such technology/goods/services under the contract shall be entitled to those better terms?",
+    "answer_format": "Yes/No",
+    "group": null
+  },
+  {
+    "name": "Non-Compete",
+    "description": "Is there a restriction on the ability of a party to compete with the counterparty or operate in a certain geography or business or technology sector?",
+    "answer_format": "Yes/No",
+    "group": "2"
+  },
+  {
+    "name": "Exclusivity",
+    "description": "Is there an exclusive dealing commitment with the counterparty? This includes a commitment to procure all “requirements” from one party of certain technology, goods, or services or a prohibition on licensing or selling technology, goods or services to third parties, or a prohibition on collaborating or working with other parties), whether during the contract or after the contract ends (or both).",
+    "answer_format": "Yes/No",
+    "group": "2"
+  },
+  {
+    "name": "No-Solicit of Customers",
+    "description": "Is a party restricted from contracting or soliciting customers or partners of the counterparty, whether during the contract or after the contract ends (or both)?",
+    "answer_format": "Yes/No",
+    "group": "2"
+  },
+  {
+    "name": "Competitive Restriction Exception",
+    "description": "This category includes the exceptions or carveouts to Non-Compete, Exclusivity and No-Solicit of Customers above.",
+    "answer_format": "Yes/No",
+    "group": "2"
+  },
+  {
+    "name": "No-Solicit of Employees",
+    "description": "Is there a restriction on a party’s soliciting or hiring employees and/or contractors from the counterparty, whether during the contract or after the contract ends (or both)?",
+    "answer_format": "Yes/No",
+    "group": null
+  },
+  {
+    "name": "Non-Disparagement",
+    "description": "Is there a requirement on a party not to disparage the counterparty?",
+    "answer_format": "Yes/No",
+    "group": null
+  },
+  {
+    "name": "Termination for Convenience",
+    "description": "Can a party terminate this contract without cause (solely by giving a notice and allowing a waiting period to expire)?",
+    "answer_format": "Yes/No",
+    "group": null
+  },
+  {
+    "name": "Rofr/Rofo/Rofn",
+    "description": "Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?",
+    "answer_format": "Yes/No",
+    "group": null
+  },
+  {
+    "name": "Change of Control",
+    "description": "Does one party have the right to terminate or is consent or notice required of the counterparty if such party undergoes a change of control, such as a merger, stock sale, transfer of all or substantially all of its assets or business, or assignment by operation of law?",
+    "answer_format": "Yes/No",
+    "group": "3"
+  },
+  {
+    "name": "Anti-Assignment",
+    "description": "Is consent or notice required of a party if the contract is assigned to a third party?",
+    "answer_format": "Yes/No",
+    "group": "3"
+  },
+  {
+    "name": "Revenue/Profit Sharing",
+    "description": "Is one party required to share revenue or profit with the counterparty for any technology, goods, or services?",
+    "answer_format": "Yes/No",
+    "group": null
+  },
+  {
+    "name": "Price Restrictions",
+    "description": "Is there a restriction on the ability of a party to raise or reduce prices of technology, goods, or services provided?",
+    "answer_format": "Yes/No",
+    "group": null
+  },
+  {
+    "name": "Minimum Commitment",
+    "description": "Is there a minimum order size or minimum amount or units per-time period that one party must buy from the counterparty under the contract?",
+    "answer_format": "Yes/No",
+    "group": null
+  },
+  {
+    "name": "Volume Restriction",
+    "description": "Is there a fee increase or consent requirement, etc. if one party’s use of the product/services exceeds certain threshold?",
+    "answer_format": "Yes/No",
+    "group": null
+  },
+  {
+    "name": "IP Ownership Assignment",
+    "description": "Does intellectual property created by one party become the property of the counterparty, either per the terms of the contract or upon the occurrence of certain events?",
+    "answer_format": "Yes/No",
+    "group": null
+  },
+  {
+    "name": "Joint IP Ownership",
+    "description": "Is there any clause providing for joint or shared ownership of intellectual property between the parties to the contract?",
+    "answer_format": "Yes/No",
+    "group": null
+  },
+  {
+    "name": "License Grant",
+    "description": "Does the contract contain a license granted by one party to its counterparty?",
+    "answer_format": "Yes/No",
+    "group": "4"
+  },
+  {
+    "name": "Non-Transferable License",
+    "description": "Does the contract limit the ability of a party to transfer the license being granted to a third party?",
+    "answer_format": "Yes/No",
+    "group": "4"
+  },
+  {
+    "name": "Affiliate License-Licensor",
+    "description": "Does the contract contain a license grant by affiliates of the licensor or that includes intellectual property of affiliates of the licensor?",
+    "answer_format": "Yes/No",
+    "group": "4"
+  },
+  {
+    "name": "Affiliate License-Licensee",
+    "description": "Does the contract contain a license grant to a licensee (incl. sublicensor) and the affiliates of such licensee/sublicensor?",
+    "answer_format": null,
+    "group": "4"
+  },
+  {
+    "name": "Unlimited/All-You-Can-Eat-License",
+    "description": "Is there a clause granting one party an “enterprise,” “all you can eat” or unlimited usage license?",
+    "answer_format": "Yes/No",
+    "group": "4"
+  },
+  {
+    "name": "Irrevocable or Perpetual License",
+    "description": "Does the contract contain a license grant that is irrevocable or perpetual?",
+    "answer_format": "Yes/No",
+    "group": "4"
+  },
+  {
+    "name": "Source Code Escrow",
+    "description": "Is one party required to deposit its source code into escrow with a third party, which can be released to the counterparty upon the occurrence of certain events (bankruptcy, insolvency, etc.)?",
+    "answer_format": "Yes/No",
+    "group": null
+  },
+  {
+    "name": "Post-Termination Services",
+    "description": "Is a party subject to obligations after the termination or expiration of a contract, including any post-termination transition, payment, transfer of IP, wind-down, last-buy, or similar commitments?",
+    "answer_format": "Yes/No",
+    "group": "5"
+  },
+  {
+    "name": "Audit Rights",
+    "description": "Does a party have the right to audit the books, records, or physical locations of the counterparty to ensure compliance with the contract?",
+    "answer_format": "Yes/No",
+    "group": "5"
+  },
+  {
+    "name": "Uncapped Liability",
+    "description": "Is a party’s liability uncapped upon the breach of its obligation in the contract? This also includes uncap liability for a particular type of breach such as IP infringement or breach of confidentiality obligation.",
+    "answer_format": "Yes/No",
+    "group": "6"
+  },
+  {
+    "name": "Cap on Liability",
+    "description": "Does the contract include a cap on liability upon the breach of a party’s obligation? This includes time limitation for the counterparty to bring claims or maximum amount for recovery.",
+    "answer_format": "Yes/No",
+    "group": "6"
+  },
+  {
+    "name": "Liquidated Damages",
+    "description": "Does the contract contain a clause that would award either party liquidated damages for breach or a fee upon the termination of a contract (termination fee)?",
+    "answer_format": "Yes/No",
+    "group": null
+  },
+  {
+    "name": "Warranty Duration",
+    "description": "What is the duration of any warranty against defects or errors in technology, products, or services provided under the contract?",
+    "answer_format": "Number of months or years",
+    "group": null
+  },
+  {
+    "name": "Insurance",
+    "description": "Is there a requirement for insurance that must be maintained by one party for the benefit of the counterparty?",
+    "answer_format": "Yes/No",
+    "group": null
+  },
+  {
+    "name": "Covenant Not to Sue",
+    "description": "Is a party restricted from contesting the validity of the counterparty’s ownership of intellectual property or otherwise bringing a claim against the counterparty for matters unrelated to the contract?",
+    "answer_format": "Yes/No",
+    "group": null
+  },
+  {
+    "name": "Third Party Beneficiary",
+    "description": "Is there a non-contracting party who is a beneficiary to some or all of the clauses in the contract and therefore can enforce its rights against a contracting party?",
+    "answer_format": "Yes/No",
+    "group": null
+  }
+]
