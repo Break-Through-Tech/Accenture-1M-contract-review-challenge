@@ -1,0 +1,42 @@
+category,task,train_contracts,test_contracts,expected_val_contracts,positive_rate,chunk_positive_rate,spans_per_positive_contract,median_span_words,median_rel_position,most_overlaps_with,shortlist
+Anti-Assignment,yes/no clause,302,72,60.4,0.735,0.052,1.749,35.0,0.787,Change of Control,True
+Cap on Liability,yes/no clause,231,44,46.2,0.54,0.049,2.444,49.0,0.65,Uncapped Liability,True
+License Grant,yes/no clause,205,50,41.0,0.501,0.058,3.047,53.0,0.284,Non-Transferable License,True
+Audit Rights,yes/no clause,176,38,35.2,0.42,0.04,3.005,40.0,0.474,Post-Termination Services,True
+Post-Termination Services,yes/no clause,153,29,30.6,0.358,0.035,2.473,56.5,0.641,Rofr/Rofo/Rofn,True
+Termination for Convenience,yes/no clause,153,29,30.6,0.358,0.02,1.346,27.0,0.598,Expiration Date,True
+Exclusivity,yes/no clause,147,33,29.4,0.354,0.032,2.278,46.0,0.208,License Grant,True
+Insurance,yes/no clause,134,32,26.8,0.326,0.026,3.373,37.0,0.572,Post-Termination Services,True
+Minimum Commitment,yes/no clause,133,32,26.6,0.324,0.033,2.57,43.0,0.361,Exclusivity,True
+Revenue/Profit Sharing,yes/no clause,131,35,26.2,0.326,0.028,2.518,44.5,0.406,Minimum Commitment,True
+Non-Transferable License,yes/no clause,116,22,23.2,0.271,0.024,2.159,51.0,0.283,License Grant,True
+IP Ownership Assignment,yes/no clause,100,23,20.0,0.242,0.023,2.561,52.0,0.458,Post-Termination Services,True
+Non-Compete,yes/no clause,96,23,19.2,0.234,0.021,2.176,48.0,0.412,No-Solicit of Employees,True
+Change of Control,yes/no clause,95,26,19.0,0.238,0.02,2.091,49.0,0.644,Anti-Assignment,True
+Document Name,extract value,407,102,81.4,1.0,0.044,1.022,3.0,0.003,Parties,False
+Parties,extract value,406,102,81.2,0.998,0.05,5.02,2.0,0.011,Document Name,False
+Agreement Date,extract value,376,93,75.2,0.921,0.04,1.013,3.0,0.007,Effective Date,False
+Governing Law,extract value,353,83,70.6,0.857,0.046,1.062,29.0,0.834,,False
+Expiration Date,extract value,334,78,66.8,0.809,0.045,1.131,31.0,0.406,Effective Date,False
+Effective Date,extract value,319,70,63.8,0.764,0.038,1.147,5.0,0.011,Agreement Date,False
+Renewal Term,extract value,150,26,30.0,0.346,0.019,1.193,44.0,0.393,Notice Period to Terminate Renewal,False
+Uncapped Liability,yes/no clause,98,13,19.6,0.218,0.015,1.505,65.0,0.693,Cap on Liability,False
+Notice Period to Terminate Renewal,extract value,95,16,19.0,0.218,0.012,1.099,46.5,0.466,Renewal Term,False
+Covenant Not to Sue,yes/no clause,76,24,15.2,0.196,0.015,1.73,48.0,0.478,Cap on Liability,False
+Rofr/Rofo/Rofn,yes/no clause,68,17,13.6,0.167,0.018,4.318,52.0,0.439,Post-Termination Services,False
+Volume Restriction,yes/no clause,65,17,13.0,0.161,0.013,2.085,37.0,0.298,Minimum Commitment,False
+Warranty Duration,extract value,65,10,13.0,0.147,0.012,2.347,40.0,0.502,Cap on Liability,False
+Competitive Restriction Exception,yes/no clause,60,16,12.0,0.149,0.011,1.645,55.0,0.22,Exclusivity,False
+Irrevocable or Perpetual License,yes/no clause,57,13,11.4,0.138,0.014,2.357,71.0,0.385,License Grant,False
+No-Solicit of Employees,yes/no clause,48,10,9.6,0.114,0.007,1.552,56.0,0.655,Non-Compete,False
+Affiliate License-Licensee,yes/no clause,47,12,9.4,0.116,0.011,1.949,74.0,0.317,License Grant,False
+Liquidated Damages,yes/no clause,47,14,9.4,0.12,0.009,1.984,49.0,0.525,Termination for Convenience,False
+Joint IP Ownership,yes/no clause,39,7,7.8,0.09,0.008,2.5,46.0,0.506,IP Ownership Assignment,False
+Non-Disparagement,yes/no clause,31,7,6.2,0.075,0.006,1.711,35.0,0.498,Covenant Not to Sue,False
+No-Solicit of Customers,yes/no clause,27,7,5.4,0.067,0.005,1.706,37.5,0.498,Non-Compete,False
+Third Party Beneficiary,yes/no clause,26,6,5.2,0.063,0.004,1.219,33.0,0.76,,False
+Most Favored Nation,yes/no clause,25,3,5.0,0.055,0.004,1.357,61.0,0.283,Exclusivity,False
+Affiliate License-Licensor,yes/no clause,17,6,3.4,0.045,0.006,3.0,80.0,0.319,License Grant,False
+Price Restrictions,yes/no clause,15,0,3.0,0.029,0.002,1.8,46.0,0.347,Renewal Term,False
+Unlimited/All-You-Can-Eat-License,yes/no clause,14,3,2.8,0.033,0.002,1.882,48.5,0.23,License Grant,False
+Source Code Escrow,yes/no clause,12,1,2.4,0.026,0.003,5.077,38.5,0.624,Non-Transferable License,False
