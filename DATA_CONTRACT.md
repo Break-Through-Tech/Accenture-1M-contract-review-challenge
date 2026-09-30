@@ -76,6 +76,8 @@ Rules are applied in repeated passes until the text stops changing. A single
 pass is not enough, because removing a page marker can push two blank lines
 together after the blank-line rule has already run.
 
+
+
 ### How the offsets survive
 
 Every rule only deletes characters or shortens a run to a prefix of itself,
@@ -95,6 +97,22 @@ run on macOS produce byte-identical files.
 
 `start_raw` and `end_raw` keep the original CUAD offsets on every annotation,
 so any span can still be traced back to the source JSON.
+
+## Train / validation / test split
+
+`python scripts/make_splits.py` writes `data/processed/splits.csv`
+(`contract_id`, `split`), with `split` one of `train`, `val` or `test`.
+
+* `test` is the official CUAD test split, unchanged (102 contracts).
+* `val` is carved out of the official train split with multi-label
+  stratification on which categories each contract has
+  (`iterative-stratification`). 100 seeds are tried and the one with the
+  smallest train/val positive-rate gap is kept, over the categories with at
+  least 50 positive contracts: seed 31, max gap 0.036.
+* The duplicate ADUROBIOTECH contract is left out of every split.
+* Result: 323 train, 84 val, 102 test.
+
+Chunks inherit the split of their contract. Never re-split at chunk level.
 
 ## Checks
 
