@@ -30,12 +30,13 @@ def main() -> None:
 
     best = None
     for seed in SEEDS:
-        msss = MultilabelStratifiedShuffleSplit(n_splits=1, test_size=VAL_SIZE, random_state=seed)
+        msss = MultilabelStratifiedShuffleSplit(n_splits=1, test_size=VAL_SIZE, random_state=seed)  # pyright: ignore[reportArgumentType]
         _, val_idx = next(msss.split(Y.index.to_frame(), Y.values))
         gap = max_rate_gap(Y, val_idx)
         if best is None or gap < best[0]:
             best = (gap, seed, val_idx)
 
+    assert best is not None  # SEEDS is non-empty, so the loop always sets it
     gap, seed, val_idx = best
     print(f"chosen seed: {seed}, max train/val rate gap: {gap:.3f}")
 

@@ -1,0 +1,52 @@
+{
+  "issue": 13,
+  "tokenizer": "bert-base-uncased",
+  "chunk_tokens": 512,
+  "overlap_tokens": 64,
+  "chunk_label_rule": "positive if the chunk overlaps any annotated span",
+  "vectorizer": {
+    "max_df": 0.9,
+    "max_features": 200000,
+    "min_df": 3,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "sublinear_tf": true,
+    "token_pattern": "(?u)\\b\\w[\\w'-]*\\b"
+  },
+  "model": "LogisticRegression(class_weight='balanced', solver='liblinear'), one per category",
+  "C_grid": [
+    0.25,
+    1.0,
+    4.0,
+    16.0,
+    64.0
+  ],
+  "val_macro_avg_precision_by_C": {
+    "0.25": 0.5477700825727843,
+    "1.0": 0.5806965117609784,
+    "4.0": 0.6048914042436958,
+    "16.0": 0.6163179017663408,
+    "64.0": 0.6199588922456369
+  },
+  "chosen_C": 64.0,
+  "thresholds": "per category, max F1 on validation chunks",
+  "contract_rule": "contract flagged if any chunk's probability >= category threshold",
+  "categories": [
+    "Anti-Assignment",
+    "Cap on Liability",
+    "License Grant",
+    "Audit Rights",
+    "Post-Termination Services",
+    "Termination for Convenience",
+    "Exclusivity",
+    "Insurance",
+    "Minimum Commitment",
+    "Revenue/Profit Sharing",
+    "Non-Transferable License",
+    "IP Ownership Assignment",
+    "Non-Compete",
+    "Change of Control"
+  ]
+}
