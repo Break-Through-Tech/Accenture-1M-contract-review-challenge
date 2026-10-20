@@ -3,5 +3,3 @@ __pycache__/
 .pytest_cache/
 .DS_Store
 .venv/
-.model-cache/
-results/transformer_multilabel/**/model/
