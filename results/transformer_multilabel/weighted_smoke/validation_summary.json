@@ -1,0 +1,8 @@
+{
+  "micro_precision": 0.04285714285714286,
+  "micro_recall": 0.4090909090909091,
+  "micro_f1": 0.07758620689655173,
+  "macro_f1_all_labels": 0.042903848106406746,
+  "validation_chunks_evaluated": 69,
+  "threshold": 0.5
+}
