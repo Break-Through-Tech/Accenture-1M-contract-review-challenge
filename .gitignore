@@ -6,4 +6,3 @@ __pycache__/
 models/
 .model-cache/
 results/transformer_multilabel/**/model/
-models/
