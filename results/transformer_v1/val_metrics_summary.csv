@@ -1,0 +1,8 @@
+,chunk_level,contract_level
+macro_precision,0.5689,0.6771
+macro_recall,0.5781,0.7893
+macro_f1,0.5497,0.7063
+macro_avg_precision,0.5141,0.7145
+micro_precision,0.6419,0.7859
+micro_recall,0.6787,0.8636
+micro_f1,0.6598,0.8229
