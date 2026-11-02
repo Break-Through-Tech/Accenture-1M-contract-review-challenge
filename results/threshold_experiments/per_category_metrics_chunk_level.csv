@@ -1,0 +1,206 @@
+strategy,category,threshold,positives,tp,fp,fn,precision,recall,f1
+fixed_0.5,Document Name,0.5,87,75,29,12,0.7212,0.8621,0.7853
+fixed_0.5,Parties,0.5,110,94,47,16,0.6667,0.8545,0.749
+fixed_0.5,Agreement Date,0.5,78,75,28,3,0.7282,0.9615,0.8287
+fixed_0.5,Effective Date,0.5,83,59,63,24,0.4836,0.7108,0.5756
+fixed_0.5,Expiration Date,0.5,91,82,48,9,0.6308,0.9011,0.7421
+fixed_0.5,Renewal Term,0.5,43,38,20,5,0.6552,0.8837,0.7525
+fixed_0.5,Notice Period to Terminate Renewal,0.5,25,21,23,4,0.4773,0.84,0.6087
+fixed_0.5,Governing Law,0.5,89,84,14,5,0.8571,0.9438,0.8984
+fixed_0.5,Most Favored Nation,0.5,11,3,10,8,0.2308,0.2727,0.25
+fixed_0.5,Non-Compete,0.5,32,18,49,14,0.2687,0.5625,0.3636
+fixed_0.5,Exclusivity,0.5,53,32,85,21,0.2735,0.6038,0.3765
+fixed_0.5,No-Solicit of Customers,0.5,6,3,16,3,0.1579,0.5,0.24
+fixed_0.5,Competitive Restriction Exception,0.5,22,7,24,15,0.2258,0.3182,0.2642
+fixed_0.5,No-Solicit of Employees,0.5,16,10,9,6,0.5263,0.625,0.5714
+fixed_0.5,Non-Disparagement,0.5,13,3,33,10,0.0833,0.2308,0.1224
+fixed_0.5,Termination for Convenience,0.5,46,34,88,12,0.2787,0.7391,0.4048
+fixed_0.5,Rofr/Rofo/Rofn,0.5,32,13,18,19,0.4194,0.4062,0.4127
+fixed_0.5,Change of Control,0.5,42,20,22,22,0.4762,0.4762,0.4762
+fixed_0.5,Anti-Assignment,0.5,112,97,34,15,0.7405,0.8661,0.7984
+fixed_0.5,Revenue/Profit Sharing,0.5,39,25,55,14,0.3125,0.641,0.4202
+fixed_0.5,Price Restrictions,0.5,3,0,8,3,0.0,0.0,0.0
+fixed_0.5,Minimum Commitment,0.5,55,36,95,19,0.2748,0.6545,0.3871
+fixed_0.5,Volume Restriction,0.5,28,12,37,16,0.2449,0.4286,0.3117
+fixed_0.5,IP Ownership Assignment,0.5,46,35,74,11,0.3211,0.7609,0.4516
+fixed_0.5,Joint IP Ownership,0.5,15,7,37,8,0.1591,0.4667,0.2373
+fixed_0.5,License Grant,0.5,124,106,56,18,0.6543,0.8548,0.7413
+fixed_0.5,Non-Transferable License,0.5,48,38,60,10,0.3878,0.7917,0.5205
+fixed_0.5,Affiliate License-Licensor,0.5,9,1,12,8,0.0769,0.1111,0.0909
+fixed_0.5,Affiliate License-Licensee,0.5,17,10,36,7,0.2174,0.5882,0.3175
+fixed_0.5,Unlimited/All-You-Can-Eat-License,0.5,5,0,4,5,0.0,0.0,0.0
+fixed_0.5,Irrevocable or Perpetual License,0.5,26,14,47,12,0.2295,0.5385,0.3218
+fixed_0.5,Source Code Escrow,0.5,5,2,5,3,0.2857,0.4,0.3333
+fixed_0.5,Post-Termination Services,0.5,84,63,110,21,0.3642,0.75,0.4903
+fixed_0.5,Audit Rights,0.5,86,77,63,9,0.55,0.8953,0.6814
+fixed_0.5,Uncapped Liability,0.5,30,23,38,7,0.377,0.7667,0.5055
+fixed_0.5,Cap on Liability,0.5,101,74,75,27,0.4966,0.7327,0.592
+fixed_0.5,Liquidated Damages,0.5,25,12,13,13,0.48,0.48,0.48
+fixed_0.5,Warranty Duration,0.5,30,21,31,9,0.4038,0.7,0.5122
+fixed_0.5,Insurance,0.5,48,42,17,6,0.7119,0.875,0.785
+fixed_0.5,Covenant Not to Sue,0.5,28,19,29,9,0.3958,0.6786,0.5
+fixed_0.5,Third Party Beneficiary,0.5,6,4,11,2,0.2667,0.6667,0.381
+global_macro_f1,Document Name,0.68,87,74,18,13,0.8043,0.8506,0.8268
+global_macro_f1,Parties,0.68,110,89,31,21,0.7417,0.8091,0.7739
+global_macro_f1,Agreement Date,0.68,78,72,19,6,0.7912,0.9231,0.8521
+global_macro_f1,Effective Date,0.68,83,54,39,29,0.5806,0.6506,0.6136
+global_macro_f1,Expiration Date,0.68,91,80,39,11,0.6723,0.8791,0.7619
+global_macro_f1,Renewal Term,0.68,43,36,7,7,0.8372,0.8372,0.8372
+global_macro_f1,Notice Period to Terminate Renewal,0.68,25,20,12,5,0.625,0.8,0.7018
+global_macro_f1,Governing Law,0.68,89,81,11,8,0.8804,0.9101,0.895
+global_macro_f1,Most Favored Nation,0.68,11,1,6,10,0.1429,0.0909,0.1111
+global_macro_f1,Non-Compete,0.68,32,17,30,15,0.3617,0.5312,0.4304
+global_macro_f1,Exclusivity,0.68,53,25,44,28,0.3623,0.4717,0.4098
+global_macro_f1,No-Solicit of Customers,0.68,6,1,7,5,0.125,0.1667,0.1429
+global_macro_f1,Competitive Restriction Exception,0.68,22,7,11,15,0.3889,0.3182,0.35
+global_macro_f1,No-Solicit of Employees,0.68,16,9,4,7,0.6923,0.5625,0.6207
+global_macro_f1,Non-Disparagement,0.68,13,2,15,11,0.1176,0.1538,0.1333
+global_macro_f1,Termination for Convenience,0.68,46,25,63,21,0.2841,0.5435,0.3731
+global_macro_f1,Rofr/Rofo/Rofn,0.68,32,11,12,21,0.4783,0.3438,0.4
+global_macro_f1,Change of Control,0.68,42,17,10,25,0.6296,0.4048,0.4928
+global_macro_f1,Anti-Assignment,0.68,112,94,16,18,0.8545,0.8393,0.8468
+global_macro_f1,Revenue/Profit Sharing,0.68,39,23,37,16,0.3833,0.5897,0.4646
+global_macro_f1,Price Restrictions,0.68,3,0,0,3,0.0,0.0,0.0
+global_macro_f1,Minimum Commitment,0.68,55,31,52,24,0.3735,0.5636,0.4493
+global_macro_f1,Volume Restriction,0.68,28,8,13,20,0.381,0.2857,0.3265
+global_macro_f1,IP Ownership Assignment,0.68,46,28,40,18,0.4118,0.6087,0.4912
+global_macro_f1,Joint IP Ownership,0.68,15,7,26,8,0.2121,0.4667,0.2917
+global_macro_f1,License Grant,0.68,124,100,34,24,0.7463,0.8065,0.7752
+global_macro_f1,Non-Transferable License,0.68,48,37,42,11,0.4684,0.7708,0.5827
+global_macro_f1,Affiliate License-Licensor,0.68,9,0,4,9,0.0,0.0,0.0
+global_macro_f1,Affiliate License-Licensee,0.68,17,6,22,11,0.2143,0.3529,0.2667
+global_macro_f1,Unlimited/All-You-Can-Eat-License,0.68,5,0,1,5,0.0,0.0,0.0
+global_macro_f1,Irrevocable or Perpetual License,0.68,26,13,32,13,0.2889,0.5,0.3662
+global_macro_f1,Source Code Escrow,0.68,5,2,0,3,1.0,0.4,0.5714
+global_macro_f1,Post-Termination Services,0.68,84,54,68,30,0.4426,0.6429,0.5243
+global_macro_f1,Audit Rights,0.68,86,74,53,12,0.5827,0.8605,0.6948
+global_macro_f1,Uncapped Liability,0.68,30,21,29,9,0.42,0.7,0.525
+global_macro_f1,Cap on Liability,0.68,101,74,43,27,0.6325,0.7327,0.6789
+global_macro_f1,Liquidated Damages,0.68,25,10,6,15,0.625,0.4,0.4878
+global_macro_f1,Warranty Duration,0.68,30,16,19,14,0.4571,0.5333,0.4923
+global_macro_f1,Insurance,0.68,48,40,16,8,0.7143,0.8333,0.7692
+global_macro_f1,Covenant Not to Sue,0.68,28,17,10,11,0.6296,0.6071,0.6182
+global_macro_f1,Third Party Beneficiary,0.68,6,3,5,3,0.375,0.5,0.4286
+per_category_max_f1,Document Name,0.8733,87,72,13,15,0.8471,0.8276,0.8372
+per_category_max_f1,Parties,0.8937,110,86,8,24,0.9149,0.7818,0.8431
+per_category_max_f1,Agreement Date,0.8915,78,68,9,10,0.8831,0.8718,0.8774
+per_category_max_f1,Effective Date,0.9303,83,43,10,40,0.8113,0.5181,0.6324
+per_category_max_f1,Expiration Date,0.8454,91,76,22,15,0.7755,0.8352,0.8042
+per_category_max_f1,Renewal Term,0.6834,43,36,7,7,0.8372,0.8372,0.8372
+per_category_max_f1,Notice Period to Terminate Renewal,0.6779,25,21,12,4,0.6364,0.84,0.7241
+per_category_max_f1,Governing Law,0.6003,89,83,11,6,0.883,0.9326,0.9071
+per_category_max_f1,Most Favored Nation,0.5253,11,3,9,8,0.25,0.2727,0.2609
+per_category_max_f1,Non-Compete,0.6817,32,17,30,15,0.3617,0.5312,0.4304
+per_category_max_f1,Exclusivity,0.6611,53,27,50,26,0.3506,0.5094,0.4154
+per_category_max_f1,No-Solicit of Customers,0.4907,6,4,16,2,0.2,0.6667,0.3077
+per_category_max_f1,Competitive Restriction Exception,0.7951,22,7,4,15,0.6364,0.3182,0.4242
+per_category_max_f1,No-Solicit of Employees,0.75,16,9,2,7,0.8182,0.5625,0.6667
+per_category_max_f1,Non-Disparagement,0.8327,13,2,3,11,0.4,0.1538,0.2222
+per_category_max_f1,Termination for Convenience,0.83,46,18,20,28,0.4737,0.3913,0.4286
+per_category_max_f1,Rofr/Rofo/Rofn,0.4272,32,16,22,16,0.4211,0.5,0.4571
+per_category_max_f1,Change of Control,0.6222,42,19,15,23,0.5588,0.4524,0.5
+per_category_max_f1,Anti-Assignment,0.8132,112,92,8,20,0.92,0.8214,0.8679
+per_category_max_f1,Revenue/Profit Sharing,0.7893,39,23,21,16,0.5227,0.5897,0.5542
+per_category_max_f1,Price Restrictions,0.3251,3,1,16,2,0.0588,0.3333,0.1
+per_category_max_f1,Minimum Commitment,0.7442,55,31,42,24,0.4247,0.5636,0.4844
+per_category_max_f1,Volume Restriction,0.633,28,10,18,18,0.3571,0.3571,0.3571
+per_category_max_f1,IP Ownership Assignment,0.832,46,25,12,21,0.6757,0.5435,0.6024
+per_category_max_f1,Joint IP Ownership,0.9422,15,4,4,11,0.5,0.2667,0.3478
+per_category_max_f1,License Grant,0.8204,124,96,19,28,0.8348,0.7742,0.8033
+per_category_max_f1,Non-Transferable License,0.7693,48,36,37,12,0.4932,0.75,0.595
+per_category_max_f1,Affiliate License-Licensor,0.4991,9,2,12,7,0.1429,0.2222,0.1739
+per_category_max_f1,Affiliate License-Licensee,0.5358,17,10,30,7,0.25,0.5882,0.3509
+per_category_max_f1,Unlimited/All-You-Can-Eat-License,0.2021,5,2,14,3,0.125,0.4,0.1905
+per_category_max_f1,Irrevocable or Perpetual License,0.8134,26,12,15,14,0.4444,0.4615,0.4528
+per_category_max_f1,Source Code Escrow,0.8456,5,2,0,3,1.0,0.4,0.5714
+per_category_max_f1,Post-Termination Services,0.6483,84,57,70,27,0.4488,0.6786,0.5403
+per_category_max_f1,Audit Rights,0.6985,86,74,51,12,0.592,0.8605,0.7014
+per_category_max_f1,Uncapped Liability,0.781,30,19,21,11,0.475,0.6333,0.5429
+per_category_max_f1,Cap on Liability,0.9553,101,67,6,34,0.9178,0.6634,0.7701
+per_category_max_f1,Liquidated Damages,0.6461,25,11,7,14,0.6111,0.44,0.5116
+per_category_max_f1,Warranty Duration,0.9102,30,14,6,16,0.7,0.4667,0.56
+per_category_max_f1,Insurance,0.8727,48,39,11,9,0.78,0.8125,0.7959
+per_category_max_f1,Covenant Not to Sue,0.6851,28,17,10,11,0.6296,0.6071,0.6182
+per_category_max_f1,Third Party Beneficiary,0.6203,6,4,7,2,0.3636,0.6667,0.4706
+per_category_max_f1_rare_fallback,Document Name,0.8733,87,72,13,15,0.8471,0.8276,0.8372
+per_category_max_f1_rare_fallback,Parties,0.8937,110,86,8,24,0.9149,0.7818,0.8431
+per_category_max_f1_rare_fallback,Agreement Date,0.8915,78,68,9,10,0.8831,0.8718,0.8774
+per_category_max_f1_rare_fallback,Effective Date,0.9303,83,43,10,40,0.8113,0.5181,0.6324
+per_category_max_f1_rare_fallback,Expiration Date,0.8454,91,76,22,15,0.7755,0.8352,0.8042
+per_category_max_f1_rare_fallback,Renewal Term,0.6834,43,36,7,7,0.8372,0.8372,0.8372
+per_category_max_f1_rare_fallback,Notice Period to Terminate Renewal,0.6779,25,21,12,4,0.6364,0.84,0.7241
+per_category_max_f1_rare_fallback,Governing Law,0.6003,89,83,11,6,0.883,0.9326,0.9071
+per_category_max_f1_rare_fallback,Most Favored Nation,0.5253,11,3,9,8,0.25,0.2727,0.2609
+per_category_max_f1_rare_fallback,Non-Compete,0.6817,32,17,30,15,0.3617,0.5312,0.4304
+per_category_max_f1_rare_fallback,Exclusivity,0.6611,53,27,50,26,0.3506,0.5094,0.4154
+per_category_max_f1_rare_fallback,No-Solicit of Customers,0.68,6,1,7,5,0.125,0.1667,0.1429
+per_category_max_f1_rare_fallback,Competitive Restriction Exception,0.7951,22,7,4,15,0.6364,0.3182,0.4242
+per_category_max_f1_rare_fallback,No-Solicit of Employees,0.75,16,9,2,7,0.8182,0.5625,0.6667
+per_category_max_f1_rare_fallback,Non-Disparagement,0.8327,13,2,3,11,0.4,0.1538,0.2222
+per_category_max_f1_rare_fallback,Termination for Convenience,0.83,46,18,20,28,0.4737,0.3913,0.4286
+per_category_max_f1_rare_fallback,Rofr/Rofo/Rofn,0.4272,32,16,22,16,0.4211,0.5,0.4571
+per_category_max_f1_rare_fallback,Change of Control,0.6222,42,19,15,23,0.5588,0.4524,0.5
+per_category_max_f1_rare_fallback,Anti-Assignment,0.8132,112,92,8,20,0.92,0.8214,0.8679
+per_category_max_f1_rare_fallback,Revenue/Profit Sharing,0.7893,39,23,21,16,0.5227,0.5897,0.5542
+per_category_max_f1_rare_fallback,Price Restrictions,0.68,3,0,0,3,0.0,0.0,0.0
+per_category_max_f1_rare_fallback,Minimum Commitment,0.7442,55,31,42,24,0.4247,0.5636,0.4844
+per_category_max_f1_rare_fallback,Volume Restriction,0.633,28,10,18,18,0.3571,0.3571,0.3571
+per_category_max_f1_rare_fallback,IP Ownership Assignment,0.832,46,25,12,21,0.6757,0.5435,0.6024
+per_category_max_f1_rare_fallback,Joint IP Ownership,0.9422,15,4,4,11,0.5,0.2667,0.3478
+per_category_max_f1_rare_fallback,License Grant,0.8204,124,96,19,28,0.8348,0.7742,0.8033
+per_category_max_f1_rare_fallback,Non-Transferable License,0.7693,48,36,37,12,0.4932,0.75,0.595
+per_category_max_f1_rare_fallback,Affiliate License-Licensor,0.68,9,0,4,9,0.0,0.0,0.0
+per_category_max_f1_rare_fallback,Affiliate License-Licensee,0.5358,17,10,30,7,0.25,0.5882,0.3509
+per_category_max_f1_rare_fallback,Unlimited/All-You-Can-Eat-License,0.68,5,0,1,5,0.0,0.0,0.0
+per_category_max_f1_rare_fallback,Irrevocable or Perpetual License,0.8134,26,12,15,14,0.4444,0.4615,0.4528
+per_category_max_f1_rare_fallback,Source Code Escrow,0.68,5,2,0,3,1.0,0.4,0.5714
+per_category_max_f1_rare_fallback,Post-Termination Services,0.6483,84,57,70,27,0.4488,0.6786,0.5403
+per_category_max_f1_rare_fallback,Audit Rights,0.6985,86,74,51,12,0.592,0.8605,0.7014
+per_category_max_f1_rare_fallback,Uncapped Liability,0.781,30,19,21,11,0.475,0.6333,0.5429
+per_category_max_f1_rare_fallback,Cap on Liability,0.9553,101,67,6,34,0.9178,0.6634,0.7701
+per_category_max_f1_rare_fallback,Liquidated Damages,0.6461,25,11,7,14,0.6111,0.44,0.5116
+per_category_max_f1_rare_fallback,Warranty Duration,0.9102,30,14,6,16,0.7,0.4667,0.56
+per_category_max_f1_rare_fallback,Insurance,0.8727,48,39,11,9,0.78,0.8125,0.7959
+per_category_max_f1_rare_fallback,Covenant Not to Sue,0.6851,28,17,10,11,0.6296,0.6071,0.6182
+per_category_max_f1_rare_fallback,Third Party Beneficiary,0.68,6,3,5,3,0.375,0.5,0.4286
+per_category_recall_80,Document Name,0.9208,87,70,13,17,0.8434,0.8046,0.8235
+per_category_recall_80,Parties,0.7063,110,88,28,22,0.7586,0.8,0.7788
+per_category_recall_80,Agreement Date,0.9337,78,63,8,15,0.8873,0.8077,0.8456
+per_category_recall_80,Effective Date,0.4035,83,67,77,16,0.4653,0.8072,0.5903
+per_category_recall_80,Expiration Date,0.876,91,73,20,18,0.7849,0.8022,0.7935
+per_category_recall_80,Renewal Term,0.7094,43,35,6,8,0.8537,0.814,0.8333
+per_category_recall_80,Notice Period to Terminate Renewal,0.6984,25,20,12,5,0.625,0.8,0.7018
+per_category_recall_80,Governing Law,0.9338,89,72,4,17,0.9474,0.809,0.8727
+per_category_recall_80,Most Favored Nation,0.002,11,9,676,2,0.0131,0.8182,0.0259
+per_category_recall_80,Non-Compete,0.0363,32,26,287,6,0.0831,0.8125,0.1507
+per_category_recall_80,Exclusivity,0.2241,53,43,196,10,0.1799,0.8113,0.2945
+per_category_recall_80,No-Solicit of Customers,0.193,6,5,33,1,0.1316,0.8333,0.2273
+per_category_recall_80,Competitive Restriction Exception,0.0034,22,18,382,4,0.045,0.8182,0.0853
+per_category_recall_80,No-Solicit of Employees,0.403,16,13,16,3,0.4483,0.8125,0.5778
+per_category_recall_80,Non-Disparagement,0.1048,13,11,109,2,0.0917,0.8462,0.1654
+per_category_recall_80,Termination for Convenience,0.4113,46,37,108,9,0.2552,0.8043,0.3874
+per_category_recall_80,Rofr/Rofo/Rofn,0.0106,32,26,445,6,0.0552,0.8125,0.1034
+per_category_recall_80,Change of Control,0.1394,42,34,119,8,0.2222,0.8095,0.3487
+per_category_recall_80,Anti-Assignment,0.8461,112,90,7,22,0.9278,0.8036,0.8612
+per_category_recall_80,Revenue/Profit Sharing,0.0231,39,32,276,7,0.1039,0.8205,0.1844
+per_category_recall_80,Price Restrictions,0.0363,3,3,90,0,0.0323,1.0,0.0625
+per_category_recall_80,Minimum Commitment,0.2319,55,44,213,11,0.1712,0.8,0.2821
+per_category_recall_80,Volume Restriction,0.0352,28,23,258,5,0.0819,0.8214,0.1489
+per_category_recall_80,IP Ownership Assignment,0.3569,46,37,123,9,0.2312,0.8043,0.3592
+per_category_recall_80,Joint IP Ownership,0.0389,15,12,169,3,0.0663,0.8,0.1224
+per_category_recall_80,License Grant,0.6827,124,100,34,24,0.7463,0.8065,0.7752
+per_category_recall_80,Non-Transferable License,0.4895,48,39,60,9,0.3939,0.8125,0.5306
+per_category_recall_80,Affiliate License-Licensor,0.0147,9,8,208,1,0.037,0.8889,0.0711
+per_category_recall_80,Affiliate License-Licensee,0.237,17,14,80,3,0.1489,0.8235,0.2523
+per_category_recall_80,Unlimited/All-You-Can-Eat-License,0.0734,5,4,42,1,0.087,0.8,0.1569
+per_category_recall_80,Irrevocable or Perpetual License,0.0839,26,21,116,5,0.1533,0.8077,0.2577
+per_category_recall_80,Source Code Escrow,0.0127,5,4,214,1,0.0183,0.8,0.0359
+per_category_recall_80,Post-Termination Services,0.301,84,68,187,16,0.2667,0.8095,0.4012
+per_category_recall_80,Audit Rights,0.7602,86,69,47,17,0.5948,0.8023,0.6832
+per_category_recall_80,Uncapped Liability,0.417,30,24,42,6,0.3636,0.8,0.5
+per_category_recall_80,Cap on Liability,0.2784,101,81,126,20,0.3913,0.802,0.526
+per_category_recall_80,Liquidated Damages,0.0192,25,20,263,5,0.0707,0.8,0.1299
+per_category_recall_80,Warranty Duration,0.2764,30,24,49,6,0.3288,0.8,0.466
+per_category_recall_80,Insurance,0.8727,48,39,11,9,0.78,0.8125,0.7959
+per_category_recall_80,Covenant Not to Sue,0.1715,28,23,122,5,0.1586,0.8214,0.2659
+per_category_recall_80,Third Party Beneficiary,0.0001,6,5,1205,1,0.0041,0.8333,0.0082
