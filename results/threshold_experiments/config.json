@@ -1,0 +1,29 @@
+{
+  "issue": 20,
+  "predictions": "results/transformer_v1/val_predictions.csv",
+  "chunks": 2317,
+  "contracts": 84,
+  "categories": 41,
+  "strategies": [
+    "fixed_0.5",
+    "global_macro_f1",
+    "per_category_max_f1",
+    "per_category_max_f1_rare_fallback",
+    "per_category_recall_80"
+  ],
+  "recall_target": 0.8,
+  "min_positives_for_own_threshold": 10,
+  "global_grid": [
+    0.05,
+    0.95,
+    0.01
+  ],
+  "cross_validation": {
+    "folds": 5,
+    "repeats": 5,
+    "seed": 42,
+    "unit": "contract"
+  },
+  "contract_rule": "contract flagged if any chunk is predicted positive",
+  "test_set": "not used"
+}
