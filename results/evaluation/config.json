@@ -1,0 +1,22 @@
+{
+  "predictions": {
+    "transformer": "results\\transformer_v1\\val_predictions.csv",
+    "baseline": "results\\evaluation\\baseline_val_predictions.csv"
+  },
+  "split": "val",
+  "test_set": "not used",
+  "chunks": 2317,
+  "contracts": 84,
+  "categories": 41,
+  "threshold_strategy": "per_category_max_f1_rare_fallback",
+  "min_positives_for_own_threshold": 10,
+  "headline_scoring": {
+    "name": "held-out",
+    "folds": 5,
+    "repeats": 5,
+    "seed": 42,
+    "unit": "contract"
+  },
+  "contract_rule": "contract flagged if any chunk is predicted positive",
+  "avg_precision": "threshold-free, on the full validation set"
+}
