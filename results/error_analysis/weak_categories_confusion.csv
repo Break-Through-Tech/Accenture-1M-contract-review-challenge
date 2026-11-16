@@ -1,0 +1,9 @@
+category,model,positives,TP,FP,FN
+IP Ownership Assignment,baseline,46,33,14,13
+IP Ownership Assignment,transformer,46,25,12,21
+Termination for Convenience,baseline,46,30,31,16
+Termination for Convenience,transformer,46,18,20,28
+Exclusivity,baseline,53,32,36,21
+Exclusivity,transformer,53,27,50,26
+Minimum Commitment,baseline,55,28,22,27
+Minimum Commitment,transformer,55,31,42,24
