@@ -1,0 +1,5 @@
+model,span_in_chunk,positive_chunks,missed,miss_rate
+baseline,full,1513,442,0.292
+baseline,partial,336,204,0.607
+transformer,full,1513,425,0.281
+transformer,partial,336,178,0.53

@@ -1,0 +1,9 @@
+model,span_length,positive_chunks,missed,miss_rate
+baseline,100-300,598,205,0.343
+baseline,300-1000,509,109,0.214
+baseline,<100 chars,386,122,0.316
+baseline,>1000,20,6,0.3
+transformer,100-300,598,189,0.316
+transformer,300-1000,509,134,0.263
+transformer,<100 chars,386,100,0.259
+transformer,>1000,20,2,0.1
