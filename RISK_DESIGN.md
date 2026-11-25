@@ -22,3 +22,22 @@ Issue #30. This table defines what makes a detected clause Low, Medium, or High 
 
 ## Validation
 The thresholds above will be checked against advisor-reviewed clause examples in the Risk Validation task, and adjusted based on what we learn.
+
+## Implementation: Risk Rules v1
+Issue #31. `scripts/risk_rules.py` turns the table above into Python rules; `python scripts/run_risk_rules.py` writes sample outputs to `results/risk_rules/`. Each result carries the level, a rule id, a one-sentence rationale, the facts read from the text, and any assumptions made.
+
+| Category | Rule ids (High / Medium / Low) |
+|---|---|
+| Cap on Liability | CAP-H1 unlimited, CAP-H2 cap shields only the other party / CAP-M1 under 12 months, CAP-M2 broad exceptions, CAP-M3 cap not in months of fees, CAP-M4/M5 one-sided / CAP-L1 mutual 12+ months |
+| Termination for Convenience | TFC-H1 only the other party, under 60 days / TFC-M1 mutual under 60 days, TFC-M2 one-sided 60+ days, TFC-M4 notice redacted / TFC-L1 mutual 60+ days, TFC-L2 fee or transition help, TFC-L3 only we can terminate |
+| Change of Control | COC-H1 other party terminates or must consent / COC-M1 notice plus renegotiation, COC-M4 consent not unreasonably withheld / COC-L1 notice only, COC-L2 we hold the right, COC-L3 not treated as an assignment |
+| Anti-Assignment | ASG-H1 full ban, ASG-H2 sole discretion against us / ASG-M1 reasonable consent, ASG-M2 sole discretion but mutual, ASG-M3 consent, silent on reasonableness / ASG-L1 free to affiliates and successors, ASG-L2 only the other party restricted |
+| Exclusivity | EXC-H1 locked in, no minimums or exit / EXC-M1 conditions or exit exist / EXC-L1 binds the other party, EXC-L2 short and narrow |
+| IP Ownership Assignment | IP-H1 other party owns all incl. our existing IP, IP-H2 owns all, no reservation / IP-M1 owns deliverables, we keep background IP, IP-M2 scope unclear / IP-L1 we own it |
+
+Choices the table did not settle:
+- **Which party is "us".** Clause text does not say. Pass `reviewer_aliases` (party names or roles); without them a one-sided term is read against the reviewer, and the result lists that assumption. `RuleConfig(assume_adverse_when_direction_unknown=False)` turns that off. The end-to-end pipeline (#36) needs to supply the reviewer's party name.
+- **Low needs positive evidence.** A detected clause the rules cannot read is Medium with a rule id ending `.default`. A category that is not detected is Unknown (score 0), as above.
+- **Several spans in one category:** the highest level among the readable spans wins; `span_levels` shows all of them.
+- **Thresholds** (60 days, 12 months, 3 exceptions) are fields of `RuleConfig`, so Risk Validation (#34) can change them without touching the rules.
+- **Limits.** Rules are regular expressions over the clause text. They see only the span they are given, so a minimum-purchase or exit clause written elsewhere in the contract is invisible to them (this makes Exclusivity lean High). They have not been checked against advisor labels yet.
